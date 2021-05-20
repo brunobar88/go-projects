@@ -1,6 +1,6 @@
 package account
 
-import "bank/client"
+import "personal-projects/miniBank/client"
 
 type CurrentAcount struct {
 	AccountOwner                client.AccountOwner

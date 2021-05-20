@@ -1,8 +1,8 @@
 package main
 
 import (
-	"bank/account"
 	"fmt"
+	"personal-projects/miniBank/account"
 )
 
 func PayTicket(account CheckAccount, tiketValue float64) {
