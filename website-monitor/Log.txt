@@ -1,0 +1,5 @@
+[05/05/2021 21:02:26] - https://www.google.com online
+[05/05/2021 21:02:26] - https://www.alura.com.br online
+[05/05/2021 21:02:27] - https://www.caelum.com.br online
+[05/05/2021 21:02:28] - https://www.github.com online
+[05/05/2021 21:02:29] - https://www.medium.com online
