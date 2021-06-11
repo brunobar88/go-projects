@@ -1,0 +1,58 @@
+{{define "Edit"}}
+{{template "_head"}}
+{{template "_menu"}}
+<div class="container">
+
+    <body>
+        <div class="jumbotron jumbotron-fluid">
+            <div class="container">
+                <h1 class="display-5">Edicação de produto</h1>
+                <p class="lead">Altere os dados do produto abaixo</p>
+            </div>
+        </div>
+        <form method="POST" action="update">
+            <input type="hidden" name="id" value="{{.Id}}">
+            <div class="row">
+                <div class="col-sm-8">
+                    <div class="form-group">
+                        <label for="name">Nome:</label>
+                        <input type="text" name="name" value="{{.Name}}" class="form-control">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-8">
+                    <div class="form-group">
+                        <label for="description">Descrição:</label>
+                        <input type="text" name="description" value="{{.Description}}" class="form-control">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-2">
+                    <div class="form-group">
+                        <label for="price">Preço:</label>
+                        <input type="number" name="price" value="{{.Price}}" class="form-control" step="0.01">
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-2">
+                    <div class="form-group">
+                        <label for="amount">Quantidade:</label>
+                        <input type="number" name="amount" value="{{.Amount}}" class="form-control">
+                    </div>
+                </div>
+            </div>
+            <button type="submit" value="save" class="btn btn-success">Atualizar</button>
+            <a class="btn btn-info" href="/">Voltar</a>
+        </form>
+    </body>
+
+</html>
+</div>
+</body>
+
+</html>
+{{end}}
